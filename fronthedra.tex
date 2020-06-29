@@ -1,0 +1,141 @@
+\AtBeginDocument{%
+\begingroup\pagestyle{empty}\raggedleft\parindent0pt
+\titulagemfront{}
+\vfill
+\clearpage
+
+%% Créditos ------------------------------------------------------
+\raggedright
+\linha{copyright}{\copyrightlivro}
+\linhalayout{edição brasileira©}{Circuito \ifdef{\ano}{\ano}{\the\year}}
+\linha{tradução©}{\copyrighttraducao}
+\linha{organização©}{\copyrightorganizacao}
+\linha{introdução©}{\copyrightintroducao}
+\linha{ilustração©}{\copyrightilustracao}\smallskip
+\linha{título original}{\titulooriginal}
+\linha{edição consultada}{\edicaoconsultada}
+\linha{primeira edição}{\primeiraedicao}
+\linha{agradecimentos}{\agradecimentos}
+\linha{indicação}{\indicacao}
+\linha{organização da coleção}{\organizador}
+\linha{edição}{\edicao}
+\linha{coedição}{\coedicao}
+\linha{assistência editorial}{\assistencia}
+\linha{preparação}{\preparacao}
+\linha{revisão}{\revisao}
+\linha{iconografia}{\iconografia}
+\linha{capa}{\capa}
+\linha{imagem da capa}{\imagemcapa}
+\linha{imagens de capa e miolo}{\imagens}
+\linha{ISBN}{\ISBN}
+\linha{eISBN}{\eISBN}\smallskip
+%\linhalayout{coleção}{\versal{Ataque Frontal}}
+\linhalayout{conselho consultivo}{\tiny Amilcar Parker,\\
+\qquad \qquad \qquad \qquad \quad \, Cecília Coimbra (\versal{TNM}/\versal{RJ} e \versal{UFF}),\\
+%\qquad \qquad \qquad \qquad \quad \, Edson Passetti (\versal{PUC}-\versal{SP}),\\
+\qquad \qquad \qquad \qquad \quad \, Eduardo Sterzi (\versal{UNICAMP}),\\
+\qquad \qquad \qquad \qquad \quad \, Heliana Conde (\versal{UERJ}),\\
+\qquad \qquad \qquad \qquad \quad \, Jean Tible (\versal{DCP/USP}),\\
+\qquad \qquad \qquad \qquad \quad \, João da Mata (\versal{SOMA}),\\
+\qquad \qquad \qquad \qquad \quad \, Jorge Sallum (Hedra),\\
+\qquad \qquad \qquad \qquad \quad \, Margareth Rago (Unicamp),\\
+\qquad \qquad \qquad \qquad \quad \, Priscila Vieira (\versal{UFPR}),\\
+\qquad \qquad \qquad \qquad \quad \, Salvador Schavelzon (\versal{UNIFESP}),\\
+\qquad \qquad \qquad \qquad \quad \, Thiago Rodrigues (\versal{UFF})}
+
+\medskip
+%\begingroup\tiny
+%\ifdef{\conselho}{\conselho}{\relax}
+%\par\endgroup\bigskip
+
+\begingroup \tiny
+
+\textit{Grafia atualizada segundo o Acordo Ortográfico da Língua\\
+Portuguesa de 1990, em vigor no Brasil desde 2009.}\\
+
+%\begin{vplace}[1]
+\begin{flushleft}
+\hspace{10pt}Dados Internacionais de Catalogação na Publicação -- CIP
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushleft}
+M425 \hspace{5pt}Mata, João da\\
+\hspace{20pt}\parbox{185pt}{Introdução à Soma: terapia e pedagogia anarquista do corpo / João da Mata. Apresentação de Edson Passetti. -- Rio de Janeiro: Circuito, 2020. (Coleção Ataque)}
+
+\hspace{20pt}106 p.\\[6pt]
+
+\hspace{20pt}ISBN 978-85-9582-055-5\\[6pt]
+
+\hspace{20pt}\parbox{185pt}{1. Somaterapia 2. Psicoterapia. 3. Terapia política. 4. Movimentos sociais. 5. Anarquismo. 6. Roberto Freire I. Título. II. Terapia e pedagogia anarquista do corpo. III. Série. IV. Passetti, Edson.}
+
+\begin{flushleft}
+\hspace{20pt}CDU 159.9 \hspace{130pt}CDD 301.15
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\
+\end{flushleft}
+%\end{vplace}
+
+\vfill\textit{Direitos reservados em l\'íngua\\ portuguesa somente para o Brasil}\\\medskip
+
+%
+\textsc{editora circuito ltda.}\\ 
+Rua Visconde de Inhaúma, 134, grupo 1215 - Centro\\
+20091-007, Rio de Janeiro-\textsc{rj}, Brasil\\
+Telefone/Fax +55 21 2205 3236\\\smallskip
+editoracircuito.com.br\\
+\bigskip
+Foi feito o depósito legal.\\\endgroup
+\pagebreak\raggedleft
+%% Front ---------------------------------------------------------
+% Titulo
+\titulagem
+
+{\Large \autor \par\vspace{1.5ex}}
+\ifdef{\apresentador}{{\small {\apresentador} (\textit{apresentação})} \par}{}
+\ifdef{\prefacio}{{\small {\prefacio} (\textit{prefácio})} \par}{}
+%\ifdef{\organizador}{{\small {\organizador} (\textit{organização})} \par}{}
+\ifdef{\introdutor}{{\small {\introdutor} (\textit{introdução})} \par}{}
+\ifdef{\tradutor}{{\small {\tradutor} (\textit{tradução})}\par}{}\vspace{1.5cm}
+
+{{\footnotesize{} \ifdef{\numeroedicao}{\numeroedicao}{1}ª edição} \par}
+
+%logos
+\vfill
+\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{\logo}\hfill\logoum{}\\ São Paulo\_\the\year}}{\includegraphics[width=3cm]{CIRCUITO.jpg}\break{} Rio de Janeiro\_\the\year}
+%\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
+\par\clearpage\endgroup
+% Resumo -------------------------------------------------------
+\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{.25\textheight}\mbox{} \vfill
+\baselineskip=.92\baselineskip
+\IfFileExists{PRETAS.tex}{\input{PRETAS}}{% 
+\ifdef{\resumo}{\resumo\par}{}
+\ifdef{\sobreobra}{\sobreobra}{}
+\ifdef{\sobreautor}{\mbox{}\vspace{4pt}\newline\sobreautor}{}
+\ifdef{\sobretradutor}{\newline\sobretradutor}{\relax}
+\ifdef{\sobreorganizador}{\vspace{4pt}\newline\sobreorganizador}{\relax}\par}
+\thispagestyle{empty} \endgroup
+\ifdefvoid{\sobreautor}{}{\pagebreak\ifodd\thepage\paginabranca\fi}
+% Sumário -------------------------------------------------------
+
+\sumario{}
+%\IfFileExists{INTRO.tex}{\include{INTRO}}
+
+%\IfFileExists{TEXTO.tex}{\mbox{}\include{TEXTO}}
+%\part[{{\def\break{}\titulo}}]{\titulo}
+} % fim do AtBeginDocument
+
+% Finais -------------------------------------------------------
+\AtEndDocument{%
+  %\publicidade
+
+\pagebreak\ifodd\thepage\paginabranca\fi
+
+\ifdef{\imagemficha}{\IfFileExists{\imagemficha}{\includegraphics[width=.7\textwidth]{\imagemficha}\par}}{}
+
+\mbox{}\vfill\small\thispagestyle{empty}
+\begin{center}
+\begin{minipage}{.8\textwidth}
+\centering\tiny\noindent{}Adverte-se aos curiosos que se imprimiu este livro \ifdef{\grafica}{na gráfica \grafica}{em nossas oficinas}, 
+em \today \ifdef{\papelmiolo}{em papel \papelmiolo}, em tipologia \tipopadrao{}, com diversos sofwares livres, 
+entre eles, Lua\LaTeX, git \& ruby. \ifdef{\RevisionInfo{}}{\par(v.\,\RevisionInfo)}{}\par \begin{center}\normalsize\adforn{64}\end{center}
+\end{minipage}
+\end{center}
+}
